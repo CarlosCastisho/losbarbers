@@ -11,14 +11,26 @@ body {
     line-height: 1.6;
 }
 
+/* Estilos del header */
 header {
-    background-color: #333;
+    background-color: #1e1e1e; 
     color: #fff;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 32px;
+}
+
+/* Estilos del nav */
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul li {
@@ -29,7 +41,16 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
 }
+
+header nav ul li a:hover {
+    background-color: #555; 
+}
+
 
 
 #serviciosAd {
