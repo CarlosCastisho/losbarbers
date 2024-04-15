@@ -95,7 +95,7 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
+/* Galeria */
 #galeria {
     padding: 50px 20px;
 }
@@ -110,15 +110,20 @@ footer {
     max-width: 300px; 
     margin-bottom: 20px;
 }
-
+/* Contacto */
 #contact-form {
-    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
     background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 #contact-form h2 {
     margin-bottom: 20px;
     color: #333;
+    text-align: center;
 }
 
 #contact-form label {
@@ -130,26 +135,29 @@ footer {
 #contact-form input[type="text"],
 #contact-form input[type="email"],
 #contact-form textarea {
-    width: 30%;
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    /* box-sizing: border-box; */
+    box-sizing: border-box; /* Esto ajusta el padding al tamaño total */
+    font-size: 16px;
 }
 
 #contact-form textarea {
-    height: 100px; /* Adjust as needed */
+    height: 120px;
 }
 
 #contact-form button[type="submit"] {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
 }
 
 #contact-form button[type="submit"]:hover {
