@@ -1,63 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@400;500;600;700&display=swap');
 
-body, h1, h2, p, ul, li, nav {
+
+/*
+ font-family: "Oswald", sans-serif;
+ font-family: "Poppins", sans-serif;
+*/
+
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
+
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
 }
 
-/* Estilos del header */
 header {
-    background-color: #1e1e1e; 
-    color: #fff;
-    padding: 20px;
+    
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    min-height: 80px;
+    background: #333;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 32px;
-}
-
-/* Estilos del nav */
-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
+.logo {
+    font-size: 25px;
     color: #fff;
-    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
     font-size: 18px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease; 
+    padding: 20px;
+    color: #fff;
+    display: block;
 }
 
-header nav ul li a:hover {
-    background-color: #555; 
+#menu {
+    display: none;
 }
 
+.menu-icono {
+    width: 25px;
+}
 
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px) {
+    .content {
+        min-height: 70px;
+    }
+
+    .menu {
+        top: 0;
+        padding: 16px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
 
 #serviciosAd {
     text-align: center;
     padding: 50px 0;
 }
 
+#serviciosAd img {
+    max-width: 100%;
+    height: auto;
+}
+
+#serviciosAd h2 {
+    margin-top: 20px;
+}
 
 .button {
     display: inline-block;
@@ -95,7 +158,7 @@ footer {
     text-align: center;
     padding: 20px;
 }
-/* Galeria */
+
 #galeria {
     padding: 50px 20px;
 }
@@ -110,20 +173,15 @@ footer {
     max-width: 300px; 
     margin-bottom: 20px;
 }
-/* Contacto */
+
 #contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 40px;
+    padding: 20px;
     background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 #contact-form h2 {
     margin-bottom: 20px;
     color: #333;
-    text-align: center;
 }
 
 #contact-form label {
@@ -135,29 +193,26 @@ footer {
 #contact-form input[type="text"],
 #contact-form input[type="email"],
 #contact-form textarea {
-    width: 100%;
-    padding: 12px;
+    width: 30%;
+    padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Esto ajusta el padding al tamaño total */
-    font-size: 16px;
+    /* box-sizing: border-box; */
 }
 
 #contact-form textarea {
-    height: 120px;
+    height: 100px; /* Adjust as needed */
 }
 
 #contact-form button[type="submit"] {
     background-color: #333;
     color: #fff;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    display: block;
-    margin: 0 auto;
 }
 
 #contact-form button[type="submit"]:hover {
