@@ -24,7 +24,6 @@ header {
 }
 
 .container{
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -43,12 +42,16 @@ header {
     justify-content: space-between;
 }
 
+.LogoHeader{
+    width: 10%;
+}
+
 .logo {
     font-size: 25px;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    padding-left: 7%;
+    margin-left: 12%;
 }
 
 .menu .navbar ul li{
@@ -78,7 +81,7 @@ header {
 
 @media(max-width:991px) {
     .content {
-        min-height: 70px;
+        min-height: 30%;
     }
 
     .menu {
@@ -88,6 +91,7 @@ header {
 
     .menu label {
         display: initial;
+        height: 10%;
     }
 
     .menu .navbar {
@@ -107,6 +111,16 @@ header {
     #menu:checked ~ .navbar {
         display: initial;
     }
+}
+@media(max-width:600px) {
+
+    .logo{
+        padding-bottom: 1%;
+        font-size: 100%;
+        
+    }
+
+
 }
 
 #serviciosAd {
