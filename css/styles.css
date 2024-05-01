@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
 
 /*
  font-family: "Oswald", sans-serif;
  font-family: "Poppins", sans-serif;
+ font-family: "Sevillana", cursive;
 */
 
 *{
@@ -47,6 +48,10 @@ body {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.logo img {
+    height: 50px;
 }
 
 .menu .navbar ul li{
@@ -151,8 +156,9 @@ body {
     height: auto;
 }
 
-#serviciosAd h2 {
-    margin-top: 20px;
+#serviciosAd p {
+    font-family: "Sevillana", cursive;
+    font-size: 30px;
 }
 
 .button {
@@ -185,7 +191,7 @@ section ul {
     list-style-type: none;
 }
 
-footer {
+footer .derechos{
     background-color: #000;
     color: #fff;
     text-align: center;
