@@ -19,9 +19,8 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-header {
-    
-}
+
+/* MENU*/
 
 .container{
     max-width: 1200px;
@@ -30,7 +29,7 @@ header {
 
 .content {
     min-height: 80px;
-    background: #333;
+    background: #000;
 }
 
 .menu {
@@ -94,7 +93,7 @@ header {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #333;
+        background-color: #000;
         display: none;
     }
 
@@ -106,6 +105,40 @@ header {
     #menu:checked ~ .navbar {
         display: initial;
     }
+}
+
+/*CARRUSEL*/
+.container-carrusel {
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    padding-top: 10px;
+}
+
+.carrusel {
+    width: 100vw;
+    max-width: 1000px;
+    height: 720px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carrusel ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: carrusel 15s infinite cubic-bezier(0.55, 0.48, 0.37, 0.92);
+}
+
+@keyframes carrusel {
+    0% {margin-left: 0;}
+    33% {margin-left: 0;}
+
+    33% {margin-left: -100%;}
+    66% {margin-left: -100%;}
+
+    66% {margin-left: -200%;}
+    100% {margin-left: -200%;}
 }
 
 #serviciosAd {
@@ -124,7 +157,7 @@ header {
 
 .button {
     display: inline-block;
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -153,7 +186,7 @@ section ul {
 }
 
 footer {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -181,13 +214,13 @@ footer {
 
 #contact-form h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #000;
 }
 
 #contact-form label {
     display: block;
     margin-bottom: 10px;
-    color: #333;
+    color: #000;
 }
 
 #contact-form input[type="text"],
@@ -206,7 +239,7 @@ footer {
 }
 
 #contact-form button[type="submit"] {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     padding: 10px 20px;
     border: none;
