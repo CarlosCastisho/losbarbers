@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
 
 /*
  font-family: "Oswald", sans-serif;
  font-family: "Poppins", sans-serif;
- font-family: "Sevillana", cursive;
 */
 
 *{
@@ -126,7 +125,6 @@ body {
 }
 
 #serviciosAd p {
-    font-family: "Sevillana", cursive;
     font-size: 30px;
 }
 
