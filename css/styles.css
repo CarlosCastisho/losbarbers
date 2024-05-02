@@ -83,49 +83,6 @@ body {
     display: none;
 }
 
-@media(max-width:991px) {
-    .content {
-        min-height: 30%;
-    }
-
-    .menu {
-        top: 0;
-        padding: 16px;
-    }
-
-    .menu label {
-        display: initial;
-        height: 10%;
-    }
-
-    .menu .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #000;
-        display: none;
-    }
-
-    .menu .navbar ul li {
-        width: 100%;
-    }
-
-
-    #menu:checked ~ .navbar {
-        display: initial;
-    }
-}
-@media(max-width:600px) {
-
-    .logo{
-        padding-bottom: 1%;
-        font-size: 100%;
-        
-    }
-
-}
-
 /*CARRUSEL*/
 .container-carrusel {
     width: 100vw;
@@ -296,12 +253,59 @@ footer .derechos{
         grid-auto-flow: dense;
     }
 
-    @media (min-width: 600px) {
-        .wide {
-        grid-column: span 2;
-        }
 
-        .tall {
-        grid-row: span 2;
-        }
+
+/* MEDIA QUERYS */
+@media(max-width:900px) {
+    .content {
+        min-height: 30%;
     }
+
+    .menu {
+        top: 0;
+        padding: 16px;
+    }
+
+    .menu label {
+        display: initial;
+        height: 10%;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
+@media(max-width:600px) {
+
+    .logo{
+        padding-bottom: 1%;
+        font-size: 100%;
+        
+    }
+
+}
+
+@media (min-width: 600px) {
+    /* Para Galerias */
+    .wide {
+    grid-column: span 2;
+    }
+
+    .tall {
+    grid-row: span 2;
+    }
+}
