@@ -42,16 +42,13 @@ body {
     justify-content: space-between;
 }
 
-.LogoHeader{
-    width: 10%;
-}
 
 .logo {
     font-size: 25px;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    margin-left: 12%;
+    margin-left: 1%;
 }
 
 .logo img {
@@ -84,10 +81,6 @@ body {
 }
 
 @media(max-width:991px) {
-    .content {
-        min-height: 30%;
-    }
-
     .menu {
         top: 0;
         padding: 16px;
@@ -100,7 +93,7 @@ body {
 
     .menu .navbar {
         position: absolute;
-        top: 100%;
+        top: 80px;
         left: 0;
         right: 0;
         background-color: #000;
@@ -165,9 +158,10 @@ body {
     padding: 50px 0;
 }
 
-#serviciosAd img {
-    max-width: 100%;
+.serviciosAd-content img {
+    max-width: 40%;
     height: auto;
+    border-radius: 30px;
 }
 
 #serviciosAd p {
