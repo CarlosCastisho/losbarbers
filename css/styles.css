@@ -52,7 +52,18 @@ body {
 
 .logo img {
     height: 50px;
+    animation: logoMove 5s;
+    position: relative;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
 }
+
+@keyframes logoMove {
+    from {left: 0px;}
+    to {left: 300px;}
+  }
 
 .menu .navbar ul li{
     position: relative;
@@ -175,25 +186,26 @@ footer .derechos{
 }
 
 
-#contact-form {
+#contact-section {
     padding: 20px;
     background-color: #f9f9f9;
 }
 
-#contact-form h2 {
+#contact-section h2 {
     margin-bottom: 20px;
     color: #000;
 }
 
-#contact-form label {
+#contact-section label {
     display: block;
     margin-bottom: 10px;
     color: #000;
 }
 
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form textarea {
+#contact-section input[type="text"],
+#contact-section input[type="email"],
+#contact-section input[type="tel"],
+#contact-section textarea {
     width: 30%;
     padding: 10px;
     margin-bottom: 20px;
@@ -202,11 +214,11 @@ footer .derechos{
     /* box-sizing: border-box; */
 }
 
-#contact-form textarea {
+#contact-section textarea {
     height: 100px; /* Adjust as needed */
 }
 
-#contact-form button[type="submit"] {
+#contact-section button[type="submit"] {
     background-color: #000;
     color: #fff;
     padding: 10px 20px;
@@ -216,7 +228,7 @@ footer .derechos{
     transition: background-color 0.3s;
 }
 
-#contact-form button[type="submit"]:hover {
+#contact-section button[type="submit"]:hover {
     background-color: #555;
 }
 
@@ -304,7 +316,7 @@ footer .derechos{
 
 }
 
-@media (min-width: 600px) {
+@media (max-width: 450px) {
     /* Para Galerias */
     .wide {
     grid-column: span 2;
@@ -312,6 +324,11 @@ footer .derechos{
 
     .tall {
     grid-row: span 2;
+    }
+
+    @keyframes logoMove {
+        from {left: 0px;}
+        to {left: 100px;}
     }
 }
 
